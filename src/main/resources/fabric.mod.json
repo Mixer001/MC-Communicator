@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "mccommunicator",
+  "version": "${version}",
+  "name": "McCommunicator",
+  "description": "A server-side mod enabling seamless communication from Minecraft to Discord.",
+  "authors": [
+    "mixer001"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/mccommunicator/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "client": [
+      "net.mixer.mccommunicator.mccommunicator.client.McCommunicatorClient"
+    ],
+    "main": [
+      "net.mixer.mccommunicator.mccommunicator.McCommunicator"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
